@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: Project home
+title: Project home - edited by Filip
 heroImage: /logo.svg
 heroText: Project name
 tagline: You can place the description of the project here.
