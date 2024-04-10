@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import {enNavbar, nlNavbar, zhNavbar} from "./navbar/index.js";
+import {enSidebar, nlSidebar, zhSidebar} from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -35,6 +35,22 @@ export default hopeTheme({
       },
     },
 
+    "/nl/": {
+      // navbar
+      navbar: nlNavbar,
+
+      // sidebar
+      sidebar: nlSidebar,
+
+      footer: "Default footer nl",
+
+      displayFooter: true,
+
+      metaLocales: {
+        editLink: "Edit this page on GitHub nl",
+      },
+    },
+
     /**
      * Chinese locale config
      */
@@ -59,6 +75,7 @@ export default hopeTheme({
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
+      "/nl/demo/encrypt.html": ["1234"],
       "/zh/demo/encrypt.html": ["1234"],
     },
   },

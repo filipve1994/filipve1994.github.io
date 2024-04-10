@@ -10,6 +10,11 @@ export default defineUserConfig({
       title: "Docs Demo",
       description: "A docs demo for vuepress-theme-hope",
     },
+    "/nl/": {
+      lang: "nl-NL",
+      title: "Docs Demo nl",
+      description: "A docs demo for vuepress-theme-hope nl",
+    },
     "/zh/": {
       lang: "zh-CN",
       title: "文档演示",
